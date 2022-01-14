@@ -26,7 +26,9 @@ This repository is published under a GNU GPL v3 license ([![License: GPL v3](htt
 Everything can be run from the **SF_maps.m** file. Input the required material parameters, uncomment the sections for the plots needed and select their individual input parameters. The sections are:
 
 * Regions of stacking fault configurations - This section maps the SF and SSF that can develop within a range of Schmid and Escaig stresses determined by the user.
+
 <img src="./Images/Regions.png" height="300">
 
 * Uniaxial loading inverse pole figure (IPF) - This section determines the SF and SSF configurations that can develop for all possible uniaxial loading directions, either for tension or compression. Make sure to add to path the mtex folder and initialise it with the command 'startup_mtex'. Decrease the parameter for the angular resolution and adjust the marker size to obtain more defined maps. The results are plotted in an IPF or on the IPF mapped onto the full stress map.
+
 <img src="./Images/IPF.png" height="300">     <img src="./Images/IPF_mapped.png" height="300">
