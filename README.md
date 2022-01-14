@@ -10,6 +10,8 @@ Maps of the stress orientation dependence for the appearance of different stacki
 
 The derivation and further details of this work have been published in: [F.D. León-Cázares, F. Monni, C.M.F. Rae. Acta Materialia, 199 (2020) 209-224](https://www.sciencedirect.com/science/article/abs/pii/S1359645420306297). Please cite this publication if you benefit from this repository.
 
+[![View Stacking fault maps on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://uk.mathworks.com/matlabcentral/fileexchange/105245-stacking-fault-maps)
+
 ## Requirements
 Coded in Matlab R2021a. Plotting of the inverse pole figure (IPF) map requires the mtex toolbox (tested with version 5.1.0).
 
