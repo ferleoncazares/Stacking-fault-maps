@@ -31,4 +31,4 @@ Everything can be run from the **SF_maps.m** file. Input the required material p
 
 * Uniaxial loading inverse pole figure (IPF) - This section determines the SF and SSF configurations that can develop for all possible uniaxial loading directions, either for tension or compression. Make sure to add to path the mtex folder and initialise it with the command 'startup_mtex'. Decrease the parameter for the angular resolution and adjust the marker size to obtain more defined maps. The results are plotted in an IPF or on the IPF mapped onto the full stress map.
 
-<img src="./Images/IPF.png" height="300">     <img src="./Images/IPF_mapped.png" height="300">
+<img src="./Images/IPF.png" height="250">     <img src="./Images/IPF_mapped.png" height="250">
