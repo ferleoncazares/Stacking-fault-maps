@@ -46,7 +46,7 @@ Ff2 = Ff-Ff1;
 
 
 %% Regions of stacking fault configurations
-%{
+%
 
 %%% Input - plotting range
 SS = [0,1.5e9];                 % Schmid stress [Pa]
@@ -65,8 +65,8 @@ colormap(Clrs(min(min(MRt)):max(max(MRt)),:))
 ga = gca;
 gf = gcf;
 xlim([SS(1)/1e9,SS(2)/1e9])
-xlabel('Schmid factor [GPa]')
-ylabel('Escaig factor [GPa]')
+xlabel('Schmid stress [GPa]')
+ylabel('Escaig stress [GPa]')
 set(gca,'fontsize',12)
 cb = colorbar;
 cb.Ticks = 1.5+(0:(length(Lbls)-1))*(length(Lbls)-2)/(length(Lbls)-1);
@@ -77,14 +77,14 @@ gf.Position(3) = gf.Position(3)*0.9;
 %}
 
 %% Uniaxial loading inverse pole figure (IPF)
-%{
+%
 
 % Make sure mtex has been initialised!
 % startup_mtex
 
 %%% Inputs
 S = 800e6;                      % Applied stress [Pa]
-mode = -1;                       % Loading mode: 1 -> Tension, -1 -> Compression
+mode = 1;                       % Loading mode: 1 -> Tension, -1 -> Compression
 res = 0.4;                      % Resolution for the IPF [degree]
 ms = 3;                         % Marker size for the IPF plot
 
@@ -114,8 +114,8 @@ figure          % IPF mapped onto the SOM
 scatter(reshape(tS',[],1)/1e9,reshape(tE',[],1)/1e9,20,reshape(MRt',[],1),'filled')
 colormap(Clrs(min(min(MRt)):max(max(MRt)),:))
 ga = gca;
-xlabel('Schmid factor [GPa]')
-ylabel('Escaig factor [GPa]')
+xlabel('Schmid stress [GPa]')
+ylabel('Escaig stress [GPa]')
 set(gca,'fontsize',12)
 cb = colorbar;
 cb.Ticks = 1.5+(0:(length(Lbls)-1))*(length(Lbls)-2)/(length(Lbls)-1);
