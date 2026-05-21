@@ -101,8 +101,8 @@ Fdirs = [Fdirs.h,Fdirs.k,Fdirs.l];
 [mS,mE] = deal(zeros(size(Fdirs,1),12));    
 for i = 1:size(Fdirs,1)              
     [Tr] = m24(mode,Fdirs(i,:),12,0);   % Schmid and Escaig factors
-    mS(i,:)= Tr.mS;
-    mE(i,:) = Tr.mE;
+    [mS(i,:),I]= sort(abs(Tr.mS),'descend');
+    mE(i,:) = Tr.mE(I);
 end
 tS = S*mS(:,1);                         % Schmid and Escaig stresses
 tE = S*mE(:,1);
